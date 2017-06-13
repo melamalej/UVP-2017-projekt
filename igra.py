@@ -125,11 +125,10 @@ class igra:
                                 
             
         else:
-            self.canvas.delete(ALL)
             master = Tk()
-            msg = Message(master, text = "Game over")
-            msg.config(bg='black', font=('times', 200))
-            msg.pack( )
+            w = Message(master, text="Game Over", bg='pink',)
+            w.pack()
+            self.canvas.delete(ALL)
                
 
 
